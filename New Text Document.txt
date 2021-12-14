@@ -1,0 +1,10 @@
+var arr = [{auth:[1],name:'小三'}，{auth:[1,2],name:'小三'},{auth:[5],name:'李四'}]
+  var newArr = []
+   for (var i = 0; i < arr.length; i++) {
+       for(var j = 0; j < newArr.length; j++){
+     if (newArr[j].indexOf(arr[i].name) === -1) {
+       newArr.push(arr[i])
+     }
+       }
+   }
+console.log(newArr) // 结果：[2, 8, 5, 0, 6, 7]
